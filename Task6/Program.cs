@@ -37,7 +37,12 @@ namespace task6
                     default:
                         return;
                 }
-                Console.WriteLine(stack.Peek());
+
+                var res = stack.Peek();
+
+                var resStr = (res == null) ? "EMPTY" : ((int)res).ToString();
+
+                Console.WriteLine(resStr);
             }
         }
 

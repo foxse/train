@@ -34,14 +34,14 @@
             }
         }
 
-        public string Peek()
+        public int? Peek()
         {
             if (cursor == 0)
             {
-                return "EMPTY";
+                return null;
             }
 
-            return stack[cursor - 1].ToString();
+            return stack[cursor - 1];
         }
 
     }
